@@ -24,20 +24,6 @@ namespace mission2
                 "Total number of rolls = " + input + "\n");
 
             dc.TotalCount(rolls);
-
-            //QuoteTools qt = new QuoteTools();
-
-            //string userQuote = "";
-
-            //Console.WriteLine("Welcome to the quote analyzer");
-            //Console.WriteLine("Please enter a quote");
-
-            //userQuote = Console.ReadLine();
-
-            //Console.WriteLine("Characters: " + qt.CharacterCount(userQuote));
-            //Console.WriteLine("# Words: " + qt.WordCount(userQuote));
-            //Console.WriteLine("Count of Letters:");
-            //qt.LetterCount(userQuote);
         }
     }
 }

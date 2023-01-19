@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 namespace mission2
 {
     public class DiceRoll
@@ -16,12 +17,20 @@ namespace mission2
                 int sum = dice1 + dice2;
 
                 totals[i] = sum;
-                Console.WriteLine(totals[i]);
+                //Console.WriteLine(totals[i]);
             }
 
-            for (int i = 0; i < 11; i++)
-            {   
-                Console.WriteLine(output[i] + ": ");
+            for (int i = 0; i < output.Length; i++)
+            {
+                int occurences = totals.Count(x => x == output[i]);
+                string stars = "";
+
+                for (int count = 0; count < occurences; count++)
+                {
+                    stars = stars + "*";
+                }
+
+                Console.WriteLine(output[i] + ": " + stars);
             }
 
         }
