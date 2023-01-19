@@ -19,7 +19,7 @@ namespace mission2
 
 
             //Print Results
-            Console.WriteLine("\n" + "DICE ROLLING SIMPULATION RESULTS" + "\n" +
+            Console.WriteLine("\n" + "DICE ROLLING SIMULATION RESULTS" + "\n" +
                 "Each '*' represents 1% of the total number of rolls." + "\n" +
                 "Total number of rolls = " + input + "\n");
 
