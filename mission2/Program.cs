@@ -24,6 +24,8 @@ namespace mission2
                 "Total number of rolls = " + input + "\n");
 
             dc.TotalCount(rolls);
+
+            Console.WriteLine("\n" + "Thank you for using the dice throwing simulator. Goodbye!");
         }
     }
 }

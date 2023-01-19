@@ -12,12 +12,11 @@ namespace mission2
 
             for (int i = 0; i < totals.Length; i++)
             {
-                int dice1 = rd.Next(1, 6);
-                int dice2 = rd.Next(1, 6);
+                int dice1 = rd.Next(1, 7);
+                int dice2 = rd.Next(1, 7);
                 int sum = dice1 + dice2;
 
                 totals[i] = sum;
-                //Console.WriteLine(totals[i]);
             }
 
             for (int i = 0; i < output.Length; i++)
@@ -33,18 +32,6 @@ namespace mission2
                 Console.WriteLine(output[i] + ": " + stars);
             }
 
-        }
-
-        public ushort WordCount(string quote)
-        {
-            string[] words = quote.Split(' ');
-
-            for (int i = 0; i < words.Length; i++)
-            {
-                Console.WriteLine(words[i]);
-            }
-
-            return 0;
         }
     }
 }
