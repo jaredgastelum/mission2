@@ -21,7 +21,8 @@ namespace mission2
             //Print Results
             Console.WriteLine("\n" + "DICE ROLLING SIMPULATION RESULTS" + "\n" +
                 "Each '*' represents 1% of the total number of rolls." + "\n" +
-                "Total number of rolls = " + input);
+                "Total number of rolls = " + input + "\n");
+
             dc.TotalCount(rolls);
 
             //QuoteTools qt = new QuoteTools();

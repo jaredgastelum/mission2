@@ -3,22 +3,27 @@ namespace mission2
 {
     public class DiceRoll
     {
-        public int TotalCount(int rolls)
+        public void TotalCount(int rolls)
         {
             int[] totals = new int[rolls];
+            int[] output = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 };
             Random rd = new Random();
 
-            for (int i = 0; i < rolls; i++)
+            for (int i = 0; i < totals.Length; i++)
             {
                 int dice1 = rd.Next(1, 6);
                 int dice2 = rd.Next(1, 6);
                 int sum = dice1 + dice2;
 
                 totals[i] = sum;
+                Console.WriteLine(totals[i]);
             }
 
-            Console.WriteLine("hello");
-            return 0;
+            for (int i = 0; i < 11; i++)
+            {   
+                Console.WriteLine(output[i] + ": ");
+            }
+
         }
 
         public ushort WordCount(string quote)
